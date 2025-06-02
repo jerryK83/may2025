@@ -1,0 +1,48 @@
+@media (max-width: 700px) {
+    
+    .f-box-cont img {
+        width: 200px;
+        animation: none;
+    }
+    
+    .f-box-cont h1 {
+        font-family: Charlemagne Std;
+        margin-top: 40px;
+        font-size: 80px;
+        -webkit-text-stroke: #e3b537 0.8px;
+}
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav ul li {
+        display: block;
+        font-family: Hobo Std;
+        padding: 20px;
+        line-height: 7px;
+        border-right: none;
+    }
+    
+    nav ul li::after {
+        content: "";
+        display: block;
+        max-width: 0px;
+        height: 0px;
+        background: red;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        transition: max-width 0.5s ease;
+    
+}
+    
+    .mobile-icon {
+        display: inline-block;
+    }
+    
+    
+    
+    
+}

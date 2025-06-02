@@ -1,0 +1,57 @@
+@media (max-width: 950px) {
+    .hledat input[type="submit"],  .hledat input[type="text"] {
+        display: none;
+}
+    .spy {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    
+    .all-ball:nth-child(2) {
+        display: none;
+    }
+    
+    .all-ball:nth-child(3) {
+        display: none;
+    }
+    
+    .footbal-container {
+        height: 60vh;
+        
+}
+    .all-ball img {
+        width: 150px;
+}
+    .footbal-text h1 {
+        font-size: 40px;
+}
+    
+    .footbal-text {
+        border: none;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav ul li {
+        display: block;
+        border: none;
+    }
+    
+    .mobile-icon {
+        display: inline-block;
+}
+    
+    
+    
+}
+    
+    
+
+    
+    

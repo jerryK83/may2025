@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-back {
+    width: 100%;
+    height: 70px;
+    background: #292222;
+    background: linear-gradient(90deg, rgba(41, 34, 34, 1) 1%, rgba(102, 86, 86, 1) 50%, rgba(41, 38, 25, 1) 100%);
+    border-bottom: 2px solid goldenrod;
+    position: fixed;
+    z-index: 80;
+}
+
+.mobile-back {
+    width: 100%;
+    height: 250px;
+    background: #292222;
+    background: linear-gradient(90deg, rgba(41, 34, 34, 1) 1%, rgba(102, 86, 86, 1) 50%, rgba(41, 38, 25, 1) 100%);
+    border-bottom: 2px solid goldenrod;
+    position: fixed;
+    z-index: 80;
+    display: none;
+}
+
+.mobile-icon {
+    position: fixed;
+    z-index: 200;
+    cursor: pointer;
+    right: 2%;
+    margin-top: 10px;
+    display: none;
+}
+
+nav ul {
+    position: fixed;
+    z-index: 100;
+    left: 20%;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: transparent;
+    margin-top: 5px;
+    transition: all 0.5s linear;
+}
+
+nav ul li:hover::after {
+    background: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#logo {
+    position: fixed;
+    z-index: 150;
+}
+
+#logo img {
+    width: 128px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.spy {
+    width: 100%;
+    height: 70px;
+    background: #292222;
+    background: linear-gradient(90deg, rgba(41, 34, 34, 1) 1%, rgba(102, 86, 86, 1) 50%, rgba(41, 38, 25, 1) 100%);
+    border-bottom: 2px solid goldenrod;
+    opacity: 0.1;
+    
+}
+
+.football-back {
+    background: url(../images/pitch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.football-back img {
+    width: 200px;
+    animation: ball 5s alternate infinite linear;
+}
+
+.football-back h1 {
+    margin-top: 50px;
+    font-size: 70px;
+    font-family: Charlemagne Std;
+    color: #fff;
+    -webkit-text-stroke: #000 1px;
+}
+
+
+.footbal-cont {
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.all {
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+    text-align: center;
+}
+
+
+.player_name {
+    text-align: center;
+    padding: 5px;
+    background-image: linear-gradient( 86.9deg,  rgba(253,189,38,1) 28.3%, rgba(253,109,38,1) 118.2% );
+
+    
+}
+
+.player-pic {
+    width: 200px;
+    border: 1px solid #00000030;
+    box-shadow: -2px -3px 6px #0000006e;
+    margin: 5px;
+}
+
+.player_nameb {
+    text-align: center;
+    padding: 5px;
+    background-image: radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgba(236,6,117,1) 0%, rgba(13,32,67,1) 90% );
+    color: #fff;
+
+    
+}
+
+.forward {
+    cursor: pointer;
+}
+
+.slider-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+
+.slider {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-shadow: 1px -1px 17px 0px #00000080;
+    border-radius: 10px;
+}
+
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+.slides {
+    width: 500%;
+    display: flex;
+    height: 100%;
+    
+    
+}
+
+.slide {
+    width: 20%;
+    transition: all 0.5s linear; 
+    
+}
+
+input[name="r"] {
+    display: none;
+}
+
+
+.navigation {
+    display: flex;
+    
+    
+}
+
+.bar {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.bar:hover {
+    background: #000;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.h-gall {
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: Charlemagne Std;
+    text-align: center;
+}
+
+.h-gall::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-image: radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgba(236,6,117,1) 0%, rgba(13,32,67,1) 90% );
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.gallery-container {
+    margin-top: 50px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+/*    overflow: scroll;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+.one-image {
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+
+.one-image img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.62);
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+
+.one-image img:hover {
+    transform: scale(1.04);
+    
+    
+}
+
+
+.fa-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.form {
+    border: 1px solid #000;
+    flex: 1;
+    background: #D1913C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD194, #D1913C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD194, #D1913C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px 0px #0000004a;
+}
+
+.article {
+/*    border: 1px solid #000;*/
+    text-align: center;
+    flex: 3;
+    background: url(../images/pitch.jpg);
+    color: #fff;
+    border-radius: 5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.kontakt {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 170px;
+    font-family: Charlemagne Std;
+    text-align: center;
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+.formular form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+input[type="submit"] {
+    margin-bottom: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    transition: 
+}
+
+input[type="submit"]:hover {
+    background: coral;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+
+
+input[type="text"], input[type="email"] {
+    padding: 5px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+   background: rgba(218, 165, 32, 0.4);
+    outline: none;
+    transition: all 0.5s linear;
+}
+
+textarea {
+    text-align: center;
+    padding: 10px;
+    outline: none;
+}
+
+
+.nadpis {
+    padding: 10px;
+/*    border: 1px solid black;border: 1px solid black;*/
+}
+
+.hadva {
+    margin-top: 20px;
+    font-size: 20px;    
+}
+
+.hlavnijmena {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+
+.beznytext {
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 20px;
+}
+
+
+.zmic {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.vmic {
+    margin-top: 5px;
+}
+
+
+.tabulka {
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    align-items: center;
+}
+
+
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #000;
+    
+}
+
+.cell {
+   flex: 1;
+    border-right: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.year {
+    width: 100%;
+    max-width: 50px;
+    padding: 5px;
+}
+
+.heading {
+    background: #E44D26;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.cell:last-child {
+    border-right: none;
+}
+
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    max-width: 800px;
+}
+
+th {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.table-twp-cont {
+    margin-top: 50px;
+}
+
+
+.jq-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.jq-boxes {
+    margin-top: 50px;
+    
+}
+
+.all-box {
+    border: 1px solid black;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    flex: 1;
+    background-image: linear-gradient( 69.2deg,  rgba(77,143,251,1) 35.3%, rgba(202,51,255,1) 100.3% );
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 0.5s linear;
+}
+
+.all-box:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes ball {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+
+/*background: #18293b*/
+
+/*-------------------reusable-------------------*/
+
+
+
+/*
+.row {
+    max-width: 900px;
+    margin: 0px auto;{}
+}
+*/
+
+/*
+.new-row {
+    max-width: 1050px;
+    margin: 0px auto;
+}
+*/
+
+
+
+
+
+/*
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+*/
+
